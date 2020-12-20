@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>601</width>
-    <height>240</height>
+    <width>511</width>
+    <height>251</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,7 +23,7 @@
       <property name="sizeHint" stdset="0">
        <size>
         <width>20</width>
-        <height>61</height>
+        <height>66</height>
        </size>
       </property>
      </spacer>
@@ -52,6 +52,9 @@
       </item>
       <item row="0" column="2">
        <widget class="QLabel" name="labelCurrentTime">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -107,6 +110,9 @@
           <day>1</day>
          </date>
         </property>
+        <property name="displayFormat">
+         <string>yyyy/MM/dd HH:mm:ss</string>
+        </property>
        </widget>
       </item>
       <item row="1" column="6">
@@ -130,7 +136,11 @@
        </widget>
       </item>
       <item row="2" column="2">
-       <widget class="QDateTimeEdit" name="dateTimeEdit2"/>
+       <widget class="QDateTimeEdit" name="dateTimeEdit2">
+        <property name="displayFormat">
+         <string>yyyy/MM/dd HH:mm:ss</string>
+        </property>
+       </widget>
       </item>
       <item row="2" column="3">
        <widget class="QPushButton" name="pushButtonConvert2">
@@ -162,7 +172,7 @@
       <property name="sizeHint" stdset="0">
        <size>
         <width>20</width>
-        <height>60</height>
+        <height>66</height>
        </size>
       </property>
      </spacer>
